@@ -1,0 +1,45 @@
+{
+	"name": "mongo-socket-store",
+	"version": "0.0.1",
+	"description": "Gives you the possibility to store your Socket.io sessions in MongoDB.",
+	"keywords": [
+		"websocket",
+		"socket",
+		"store",
+		"session",
+		"socket.io",
+		"mongodb",
+		"node-mongodb-native"
+	],
+	"author": {
+		"name": "Mickael van der Beek",
+		"email": "mickael@sagacify.com"
+	},
+	"contributors": [
+		{
+			"name": "Mickael van der Beek",
+			"email": "mickael@sagacify.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Mickael-van-der-Beek/mongo-socket-store.git"
+	},
+	"dependencies": {
+		"mongodb": "1.2.0"
+	},
+	"devDependencies": {
+		"mocha": "latest",
+		"chai": "latest"
+	},
+	"main": "index",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"scripts": {
+		"test" : "NODE_ENV=test mocha --timeout 5000 --reporter spec tests/launch_tests.js"
+	},
+	"readmeFilename": "README.md",
+	"_id": "mongo-socket-store@0.0.1",
+	"_from": "mongo-socket-store@latest"
+}
