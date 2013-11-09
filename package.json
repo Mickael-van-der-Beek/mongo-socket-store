@@ -39,7 +39,7 @@
 	"scripts": {
 		"test" : "NODE_ENV=test mocha --timeout 5000 --reporter spec tests/launch_tests.js"
 	},
-	"readmeFilename": "README.md",
+	"readmeFilename": "./README.md",
 	"_id": "mongo-socket-store@0.0.1",
 	"_from": "mongo-socket-store@latest"
 }
