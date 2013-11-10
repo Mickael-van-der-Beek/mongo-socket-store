@@ -33,6 +33,30 @@ io.configure(function () {
 io.sockets.on('connection', function (socket) {
   console.log('\nConnection to Socket.io initialized !');
 
+  socket.set('a', 'b', function (error) {
+    if(error) {
+      console.log(error);
+    }
+    else {
+      socket.has('a', function (error, has) {
+        if(error) {
+          console.log(error);
+        }
+        else {
+          console.log('Has ' + has);
+          socket.get('a', function (error, val) {
+            if(error) {
+              console.log(error);
+            }
+            else {
+              console.log(val);
+            }
+          });
+        }
+      });
+    }
+  });
+
   socket.emit('request', { message: 'Hello World!' });
 
   socket.on('response', function (data) {
