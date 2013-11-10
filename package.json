@@ -29,8 +29,7 @@
 		"mongodb": "1.2.0"
 	},
 	"devDependencies": {
-		"mocha": "latest",
-		"chai": "latest"
+        "chai": "latest"
 	},
 	"main": "index",
 	"engines": {

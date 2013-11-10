@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<h1>Hello world example for the MongoDB Socket.io session store.</h1>
+
+	<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io.connect('http://localhost:8000');
+		socket.on('request', function (data) {
+			console.log(data);
+			socket.emit('response', { response: 'Hello to you too!' });
+		});
+	</script>
+
+</body>
+</html>

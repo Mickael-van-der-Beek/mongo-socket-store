@@ -1,6 +1,7 @@
 {
 	"dependencies": {
 		"mongodb": "latest",
-		"socket.io": "latest"
+		"socket.io": "latest",
+		"express": "latest"
 	}
 }
